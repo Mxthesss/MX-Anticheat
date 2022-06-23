@@ -1,13 +1,13 @@
 Config = {
     
-    BlacklistWeaponLog = true, -- Discorda Log Atar 
-    KickPlayer = false,  -- Oyuncuyu Oyundan Kickler
+    BlacklistWeaponLog = true, -- False to disable discord log of using BlackListed Weapons.
+    KickPlayer = false,  -- True to kick player who give or have BlackListed Weapons.
 
-    KickMessage = 'çen çilah mı aldın çen discord.gg/S8TaJaaW',
+    KickMessage = 'You have been kicked from the server for using black listed weapons!',
 
-    DiscordWebhook = 'https://discord.com/api/webhooks/831783120083615745/qxYm4XdtPDVD0PtVjXGvKRE0-lEwTnq7Tei5_BGYmPbL9MmvVahV8z9elbfVUXuwr51J',
-    WebhookName = 'gvz-blacklistweapon',
-    WebhookAvatarUrl = 'https://cdn.discordapp.com/attachments/785071461516836874/802859048495349770/G3VEZE.png', 
+    DiscordWebhook = '-',
+    WebhookName = 'MX_BlackListedWeapons',
+    WebhookAvatarUrl = '-', 
 
     BlacklistedWeapons = {
         "WEAPON_BULLPUPSHOTGUN",
