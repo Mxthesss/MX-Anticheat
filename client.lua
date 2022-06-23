@@ -8,10 +8,10 @@ CreateThread(function()
 		if blacklisted then
 			RemoveWeaponFromPed(playerPed, weapon)
             if Config.BlacklistWeaponLog then
-                TriggerServerEvent('gvz-blacklistweaepon:dclog', 'Yasaklı Silah Alındı : '..name)
+                TriggerServerEvent('mx-blacklistweapon:dclog', 'Received BlackListed Weapons: '..name)
             end
             if Config.KickPlayer then
-                TriggerServerEvent('gvz-blacklistweaepon:drop')
+                TriggerServerEvent('mx-blacklistweapon:drop')
             end
 		end
 	end
