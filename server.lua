@@ -1,12 +1,12 @@
-RegisterServerEvent('gvz-blacklistweaepon:drop')
-AddEventHandler('gvz-blacklistweaepon:drop', function()
+RegisterServerEvent('mx-blacklistweapon:drop')
+AddEventHandler('mx-blacklistweapon:drop', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     xPlayer.kick(Config.KickMessage)
 end)
 
-RegisterServerEvent('gvz-blacklistweaepon:dclog')
-AddEventHandler('gvz-blacklistweaepon:dclog', function(text)
+RegisterServerEvent('mx-blacklistweapon:dclog')
+AddEventHandler('mx-blacklistweapon:dclog', function(text)
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
     dclog(xPlayer, text)
@@ -36,11 +36,11 @@ function dclog(xPlayer, text)
 	  ['avatar_url'] = Config.WebhookAvatarUrl,
 	  ['embeds'] = {{
 		['author'] = {
-          ['name'] = 'gvz-blacklistweapon',
-          ['icon_url'] = 'https://cdn.discordapp.com/attachments/785071461516836874/802859048495349770/G3VEZE.png'
+          ['name'] = 'mx-blacklistweapon',
+          ['icon_url'] = '-'
         },
         ['footer'] = {
-            ['text'] = 'CREATED BY G3VEZE#7918'
+            ['text'] = 'CREATED BY ✞ Mxthess ✞⁹⁹⁹⁺#1157'
         },
 		['color'] = 12914,
 		['timestamp'] = os.date('!%Y-%m-%dT%H:%M:%SZ')
