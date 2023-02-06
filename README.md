@@ -10,8 +10,8 @@ Download `Latest Release` and copy `MX-AntiCheat` Folder Into resources folder i
 ###### LAST STEP
 Do not forget to add
 
-`ensure MX_Fivem_Pausemenu`
+`ensure MX-AntiCheat`
 
-in `server.cfg` so that will make `MX_Fivem_Pausemenu` resource start automaticlly with The Server
+in `server.cfg` so that will make `MX-AntiCheat` resource start automaticlly with The Server
 
 And then Boom!
