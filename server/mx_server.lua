@@ -91,7 +91,6 @@ AddEventHandler(
         local token4 = GetPlayerToken(source, 3)
         local token5 = GetPlayerToken(source, 4)
         local token6 = GetPlayerToken(source, 5)
-        local token7 = GetPlayerToken(source, 8)
         local steamid = GetPlayerIdentifiers(source)[1]
         local license = GetPlayerIdentifiers(source)[2]
         local ip = GetPlayerEndpoint(source)
@@ -107,12 +106,12 @@ AddEventHandler(
             "negr"
             }
             
-       -- deferrals.defer()
-      -- - Citizen.Wait(500)
-      -- - if steamID2 == "n/a" then
--- deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
-     -- end
-      -- deferrals.update(string.format("\n🛡️|MX AC| Verifying your HWID..."))
+       deferrals.defer()
+       Citizen.Wait(500)
+       if steamID2 == "n/a" then
+ deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
+      end
+       deferrals.update(string.format("\n🛡️|MX AC| Verifying your HWID..."))
         Citizen.Wait(500)
         MySQL.Async.fetchAll(
             "SELECT * FROM `mxanticheatbans` WHERE `token` = @token",
@@ -271,29 +270,6 @@ AddEventHandler(
                 end
             end
         )
-        MySQL.Async.fetchAll(
-            "SELECT * FROM `mxanticheatbans` WHERE `token7` = @token7",
-            {
-                --
-                ["@token7"] = token7
-            },
-            function(data)
-                local found = false
-                for i = 1, #data, 1 do
-                    if data[i].token7 == token7 then
-                        found = true
-                    end
-                end
-                if found == true then
-                    deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_7_BANNED]"
-                    )
-                else
-                    deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
-                    Citizen.Wait(1600)
-                end
-            end
-        )
 
         Citizen.Wait(500)
         MySQL.Async.fetchAll(
@@ -395,7 +371,7 @@ RegisterCommand(
         if IsPlayerAceAllowed(source, "mx.HWID.BAN.PERMISE") then
             DiscordMsg(SourceName .. " banned " .. " " .. GetPlayerName(target) .. " due to: " .. reason, target)
             MySQL.Async.execute(
-                "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6, token7) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6, @token7)",
+                "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6)",
                 {
                     ["@name"] = GetPlayerName(target),
                     ["@steamid"] = GetPlayerIdentifiers(target)[1],
@@ -407,8 +383,7 @@ RegisterCommand(
                     ["@token3"] = GetPlayerToken(target, 2),
                     ["@token4"] = GetPlayerToken(target, 1),
                     ["@token5"] = GetPlayerToken(target, 0),
-                    ["@token6"] = GetPlayerToken(target, 3),
-                    ["@token7"] = GetPlayerToken(target, 4)
+                    ["@token6"] = GetPlayerToken(target, 3)
                 }
             )
             TriggerClientEvent(
@@ -438,7 +413,7 @@ AddEventHandler(
         GetNumPlayerTokens(name)
         local Token = GetPlayerToken(name, num)
         MySQL.Async.execute(
-            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6, token7) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6, @token7)",
+            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6)",
             {
                 ["@name"] = GetPlayerName(name),
                 ["@steamid"] = GetPlayerIdentifiers(name)[1],
@@ -450,8 +425,7 @@ AddEventHandler(
                 ["@token3"] = GetPlayerToken(name, 2),
                 ["@token4"] = GetPlayerToken(name, 3),
                 ["@token5"] = GetPlayerToken(name, 4),
-                ["@token6"] = GetPlayerToken(name, 5),
-                ["@token7"] = GetPlayerToken(name, 8)
+                ["@token6"] = GetPlayerToken(name, 5)
             }
         )
         TriggerClientEvent(
@@ -477,7 +451,7 @@ AddEventHandler(
         GetNumPlayerTokens(source)
         local Token = GetPlayerToken(source, num)
         MySQL.Async.execute(
-            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6, token7) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6, @token7)",
+            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6)",
             {
                 ["@name"] = GetPlayerName(source),
                 ["@steamid"] = GetPlayerIdentifiers(source)[1],
@@ -489,8 +463,7 @@ AddEventHandler(
                 ["@token3"] = GetPlayerToken(source, 2),
                 ["@token4"] = GetPlayerToken(source, 3),
                 ["@token5"] = GetPlayerToken(source, 4),
-                ["@token6"] = GetPlayerToken(source, 5),
-                ["@token7"] = GetPlayerToken(source, 8)
+                ["@token6"] = GetPlayerToken(source, 5)
             }
         )
         TriggerClientEvent(
@@ -503,7 +476,7 @@ AddEventHandler(
                 }
             } --
         )
-        DiscordMsg(" Detected for: "..reason, source)
+        DiscordMsg("Detected for: "..reason, source)
         TriggerClientEvent("mx:LagsToCheater")
     end
 )
@@ -513,7 +486,7 @@ function PepeWareBan(playersource, reason)
         GetNumPlayerTokens(playersource)
         local Token = GetPlayerToken(playersource, num)
         MySQL.Async.execute(
-            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6, token7) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6, @token7)",
+            "INSERT INTO mxanticheatbans (name, steamid, token, ip, license, reason, token2, token3, token4, token5, token6) VALUES(@name, @steamid, @token, @ip, @license, @reason, @token2, @token3, @token4, @token5, @token6)",
             {
                 ["@name"] = GetPlayerName(playersource),
                 ["@steamid"] = GetPlayerIdentifiers(playersource)[1],
@@ -525,8 +498,7 @@ function PepeWareBan(playersource, reason)
                 ["@token3"] = GetPlayerToken(playersource, 2),
                 ["@token4"] = GetPlayerToken(playersource, 3),
                 ["@token5"] = GetPlayerToken(playersource, 4),
-                ["@token6"] = GetPlayerToken(playersource, 5),
-                ["@token7"] = GetPlayerToken(playersource, 8)
+                ["@token6"] = GetPlayerToken(playersource, 5)
             }
         )
         TriggerClientEvent(
@@ -653,8 +625,8 @@ if mx.AntiEntityCreating == true then
     end    )
 end
 --
-RegisterCommand("nui_devtools", function(source, args, rawCommand)
-        TriggerEvent("mx_HWIDBAN", source, "Anticheat bypass attempt with nui_devtools")
+RegisterCommand("nui_devtools", function(source, args, rawCommand, sender)
+        TriggerEvent("mx_HWIDBAN", sender, "Anticheat bypass attempt with nui_devtools")
 end)
 --blood_exit
 DetectedParticles = {
@@ -769,5 +741,9 @@ AddEventHandler("lynx8:anticheat", function()
     TriggerEvent("mx_HWIDBAN", source, "Attempt to inject Lynx Menu")
 
 end)
+
+
+-- Spam Check --
+
 
 print('^5Made By Mxthess^7: ^1'..GetCurrentResourceName()..'^7 started ^2successfully^7...') 
