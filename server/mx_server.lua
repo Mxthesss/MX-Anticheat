@@ -109,7 +109,7 @@ AddEventHandler(
        deferrals.defer()
        Citizen.Wait(500)
        if steamID2 == "n/a" then
- deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
+ deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
       end
        deferrals.update(string.format("\n🛡️|MX AC| Verifying your HWID..."))
         Citizen.Wait(500)
@@ -134,7 +134,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️| MX AC | HWID has been banned 🛡️ \n 🛡️| To appeal, come to our discord. |🛡️ \n🛡️| https://dsc.gg/rptros |🛡️\n\n [ERROR: HWID_TOKEN_18_BANNED]"
+                        "\n🛡️| MX AC | HWID has been banned 🛡️ \n 🛡️| To appeal, come to our discord. |🛡️ \n🛡️| https://dsc.gg/mxthessdev |🛡️\n\n [ERROR: HWID_TOKEN_18_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -163,7 +163,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| Token has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_2_BANNED]"
+                        "\n🛡️|MX AC| Token has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_2_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -188,7 +188,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_3_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_3_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -213,7 +213,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_4_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_4_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -237,7 +237,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_5_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_5_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -262,7 +262,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_6_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_6_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -287,7 +287,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_01_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_01_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -311,7 +311,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_02_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_02_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -334,7 +334,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_03_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_03_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
