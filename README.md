@@ -29,5 +29,5 @@ I am fully open to change any file only for you something like custom for only y
 [Support](https://dsc.gg/mxthessdev)
 
 
-- [x] Remake webhooks #1
-- [x] Another design of webhooks and translates #2
+- [] Remake webhooks #1
+- [] Another design of webhooks and translates #2
