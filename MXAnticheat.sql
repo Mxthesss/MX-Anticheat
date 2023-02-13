@@ -10,6 +10,5 @@ CREATE TABLE IF NOT EXISTS `mxanticheatbans` (
   `token4` varchar(95) COLLATE utf8mb4_bin NOT NULL,
   `token5` varchar(95) COLLATE utf8mb4_bin NOT NULL,
   `token6` varchar(95) COLLATE utf8mb4_bin NOT NULL,
-  `token7` varchar(95) COLLATE utf8mb4_bin NOT NULL,
   PRIMARY KEY (`steamid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
