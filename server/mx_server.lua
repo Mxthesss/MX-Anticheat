@@ -22,7 +22,7 @@ function DiscordMsg(Reason, _source)
             ["title"] = "🛡️[ID: **" .. _source .. "**] | " .. GetPlayerName(_source) .. "🛡️",
             ["description"] = "🛡️" .. Reason .. "🛡️",
             ["footer"] = {
-                ["text"] = "MX AC"
+                ["text"] = "Made by Mxthess | MX AC"
             }
         }
     }
@@ -33,7 +33,7 @@ function DiscordMsg(Reason, _source)
         "POST",
         json.encode(
             {
-                username = "MX AC",
+                username = "Made by Mxthess | MX AC",
                 embeds = connect,
                 avatar_url = "https://cdn.discordapp.com/attachments/1071853066904686684/1071853221133422613/MXScripts.jpg"
             }
