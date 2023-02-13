@@ -27,7 +27,7 @@ function DiscordMsg(Reason, _source)
         }
     }
     PerformHttpRequest(
-        "https://discord.com/api/webhooks/1071853092506718330/poJYsXp6U-ZJpAPwOMsRVHVI9G173hxET9fjY21LxsxLwV_scS8z0_e7JjcziqvvSNPp",
+        "", -- Your Webhook URL
         function(err, text, headers)
         end,
         "POST",
@@ -56,7 +56,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
         }
     }
     PerformHttpRequest(
-        "https://discord.com/api/webhooks/1071853092506718330/poJYsXp6U-ZJpAPwOMsRVHVI9G173hxET9fjY21LxsxLwV_scS8z0_e7JjcziqvvSNPp",
+        "", -- Your Webhook URL
         function(err, text, headers)
         end,
         "POST",
@@ -72,7 +72,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
 end)
 
 --https://cdn.discordapp.com/attachments/1071853066904686684/1071853221133422613/MXScripts.jpg
---https://discord.com/api/webhooks/1071853092506718330/poJYsXp6U-ZJpAPwOMsRVHVI9G173hxET9fjY21LxsxLwV_scS8z0_e7JjcziqvvSNPp
+
 
 AddEventHandler(
     "playerConnecting",
