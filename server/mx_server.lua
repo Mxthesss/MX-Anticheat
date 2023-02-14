@@ -354,7 +354,7 @@ AddEventHandler(
 
 
 
-RegisterCommand(
+--[[RegisterCommand(
     "acban",
     function(source, args, rawCommand)
         local target = tonumber(args[1])
@@ -403,7 +403,7 @@ RegisterCommand(
             )
         end
     end
-)
+)]]--
 
 RegisterServerEvent("mx_HWIDBAN")
 AddEventHandler(
