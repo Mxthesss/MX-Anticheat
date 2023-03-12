@@ -34,6 +34,6 @@ Add this resource into your server resources and type in `server.cfg` this `ensu
   [Support](https://dsc.gg/mxthessdev)
 
 > WIP:
-
-- [ ] Remake webhooks #1
-- [ ] Another design of webhooks and translates #2
+- [ ] Update 1.0.2
+- [x] Remake webhooks #1
+- [x] Another design of webhooks and translates #2
