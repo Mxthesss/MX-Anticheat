@@ -7,13 +7,13 @@
 ░╚════╝░╚══════╝╚═╝╚══════╝╚═╝░░╚══╝░░░╚═╝░░░  ░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░]]
 mx = {}
 mx.weaponblacklisting = true
+
 --// Blacklisted Weapons \\-- 
 
 mx.weapon = {
     "WEAPON_COMBATMG",
     "WEAPON_COMBATMG_MK2",
     "WEAPON_COMPACTLAUNCHER",
-    "WEAPON_FIREWORK",
     "WEAPON_GRENADE",
     "WEAPON_GRENADELAUNCHER",
     "WEAPON_GRENADELAUNCHER_SMOKE",

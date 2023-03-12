@@ -297,6 +297,7 @@ mx.BannedEvents = {
 "esx_godirtyjob:pay",
 "esx_handcuffs:cuffing",
 "esx_jail:sendToJail",
+"esx-qalle-jail:jailPlayer",
 "esx_jail:unjailQuest",
 "esx_jailer:sendToJail",
 "esx_jailer:unjailTime",
@@ -323,7 +324,6 @@ mx.BannedEvents = {
 "police:cuffGranted",
 "unCuffServer",
 "uncuffGranted",
-"lester:vendita",
 "vrp_slotmachine:server:2",
 "whoapd:revive",
 "gcPhone:_internalAddMessageDFWM",
@@ -331,7 +331,6 @@ mx.BannedEvents = {
 "esx_vehicleshop:setVehicleOwnedDFWM",
 "esx_mafiajob:confiscateDFWMPlayerItem",
 "_chat:messageEntDFWMered",
-"esx-qalle-jail:jailPlayer",
 "lscustoms:pDFWMayGarage",
 "vrp_slotmachDFWMine:server:2",
 "Banca:dDFWMeposit",
@@ -428,6 +427,10 @@ mx.BannedEvents = {
 "veh_SR:CheckMonDFWMeyForVeh",
 "esx_carthief:alertcoDFWMps",
 "mellotrainer:adminTeDFWMmpBan",
+"99kr-burglary:addMoney",
+"burglary:money",
 "mellotrainer:adminKickDFWM",
+"esx_vangelico_robbery:gioielli1",
 "esx_society:putVehicleDFWMInGarage"
 }
+
