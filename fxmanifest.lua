@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Mxthess'
 description 'AntiCheat for TROS'
-version '1.0.0'
+version '1.0.1'
 
 client_script {
     'client/mx_client.lua',
