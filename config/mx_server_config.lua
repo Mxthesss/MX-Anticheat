@@ -7,6 +7,7 @@
 ╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝  ░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░]]
 mx = {}
 
+mx.DiscordURL = ""
 
 mx.AntiExplosionEvent = true
 mx.AntiEntityCreating = true
