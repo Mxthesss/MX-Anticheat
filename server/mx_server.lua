@@ -27,7 +27,7 @@ function DiscordMsg(Reason, _source)
         }
     }
     PerformHttpRequest(
-        "https://discord.com/api/webhooks/YOUR-WEBHOOK-URL", -- MX-AntiCheat Webhook URL
+        mx.DiscordURL, -- MX-AntiCheat Webhook URL
         function(err, text, headers)
         end,
         "POST",
@@ -56,7 +56,7 @@ AddEventHandler("LICENSE:Check", function(ip, resName)
         }
     }
     PerformHttpRequest(
-        "https://discord.com/api/webhooks/YOUR-WEBHOOK-URL", -- MX-AntiCheat Webhook URL
+        mx.DiscordURL, -- MX-AntiCheat Webhook URL
         function(err, text, headers)
         end,
         "POST",
