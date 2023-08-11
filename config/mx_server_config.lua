@@ -7,7 +7,7 @@
 ╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝  ░╚════╝░░╚════╝░╚═╝░░╚══╝╚═╝░░░░░╚═╝░╚═════╝░]]
 mx = {}
 
-mx.DiscordURL = ""
+mx.DiscordURL = "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL"
 
 mx.AntiExplosionEvent = true
 mx.AntiEntityCreating = true
